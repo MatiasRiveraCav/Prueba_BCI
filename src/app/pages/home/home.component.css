@@ -1,0 +1,183 @@
+body {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(223, 24, 24)),
+    to(rgb(230, 199, 25))
+  );
+  background: linear-gradient(rgb(223, 24, 24), rgb(230, 199, 25));
+  border: 10px solid rgb(240, 138, 42);
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  align-self: center;
+  width: 600px;
+  height: 120px;
+  margin-top: 30px;
+  position: static;
+}
+
+.grid {
+  margin-top: 200px;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  -webkit-perspective: 750px;
+  perspective: 750px;
+  display: grid;
+  grid-template-columns: repeat(3, 165px);
+  grid-template-rows: repeat(3, 165px);
+  grid-gap: 30px;
+  max-width: 790px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+}
+.grid div {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  color: transparent;
+  box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+.grid div:nth-child(odd) {
+  -webkit-animation: 1000ms ease-in-out infinite alternate pulse;
+  animation: 1000ms ease-in-out infinite alternate pulse;
+}
+.grid div:nth-child(even) {
+  -webkit-animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+  animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: relative;
+  top: 9px;
+  left: 9px;
+  background-color: transparent;
+  border-color: tomato;
+  font-size: 15.3px;
+  color: aliceblue;
+  text-shadow: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 745px) {
+  .grid {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-perspective: 450px;
+    perspective: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 15px;
+    max-width: 350px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .grid div {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2px;
+    color: transparent;
+    box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+    border-radius: 1px;
+  }
+  .button {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -1px;
+    left: -1px;
+    background-color: transparent;
+    border-color: tomato;
+    font-size: 16px;
+    color: aliceblue;
+    text-shadow: 2px;
+    font-weight: bold;
+  }
+  .logo {
+    align-self: center;
+    width: 350px;
+    position: static;
+  }
+}
+
+@media (max-width: 518px) {
+  .grid {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-perspective: 150px;
+    perspective: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    grid-gap: 5px;
+    max-width: 250px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .grid div {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2px;
+    color: transparent;
+    box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+    border-radius: 1px;
+  }
+  .button {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    left: -19px;
+    top: -19px;
+    background-color: transparent;
+    border-color: tomato;
+    font-size: 16px;
+    color: aliceblue;
+    text-shadow: 2px;
+    font-weight: bold;
+  }
+
+  .logo {
+    align-self: center;
+    position: static;
+    width: 250px;
+  }
+
+}
+
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: translate3d(0px, 0px, -60px);
+    transform: translate3d(0px, 0px, -60px);
+    box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes pulse {
+  to {
+    -webkit-transform: translate3d(0px, 0px, -60px);
+    transform: translate3d(0px, 0px, -60px);
+    box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+  }
+}

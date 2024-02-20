@@ -1,0 +1,17 @@
+table, td{
+  width: 100%;
+  text-align: center !important;
+  color: azure;
+  font-size: medium;
+  background: rgba(218, 199, 28, 0.4);
+  background: linear-gradient(rgba(218, 199, 28, 0.3), rgba(241, 232, 179, 0));
+
+}
+
+th {
+  text-align: center !important;
+  color: rgb(86, 8, 230);
+  font-size: larger;
+  font-weight: bolder;
+
+}
