@@ -34,8 +34,8 @@ export class DetailComponent implements OnInit {
       this.selectedPokemon = res;
       this.pokemonImg = this.selectedPokemon.sprites.front_default;
       this.tipo = this.selectedPokemon.types[0].type.name;
-      const { order , height, weight } =  this.selectedPokemon;
-      this.numero =  order;
+      const { id , height, weight } =  this.selectedPokemon;
+      this.numero =  id;
       this.peso = weight;
       this.altura = height
     });
