@@ -19,4 +19,4 @@ Con la terminal en la carpeta raíz, ejecutar comando `ng serve -o`
 
 ## Desarrollador
 
-###Matias Rivera Caviedes
+Matias Rivera Caviedes
