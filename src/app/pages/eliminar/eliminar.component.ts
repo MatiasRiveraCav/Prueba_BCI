@@ -39,7 +39,9 @@ export class EliminarComponent implements OnInit {
 
   openSnackBar() {
     this.eliminarPokemon();
-    this._snackBar.open('Pokémon Liberado!', 'Ok');
+    this._snackBar.open('Pokémon Liberado!', 'Ok', {
+      duration: 2000
+    });
   }
 
   eliminarPokemon() {
@@ -52,6 +54,8 @@ export class EliminarComponent implements OnInit {
 
     }
   }
-
+  closeModal(){
+    this.dialogRef.close();
+  }
 
 }

@@ -1,10 +1,15 @@
 <body>
 
   <div class="header">
-    <div class="nombre"><h1> {{ selectedPokemon.name | titlecase }} </h1></div>
+    <div class="nombre"><h1 class="luckiest-guy-regular"> {{ selectedPokemon.name | titlecase }} </h1></div>
     <div class="cerrar"><span class="material-icons" (click)="closeModal()">close</span></div>
   </div>
-
+  <div class="datos">
+    <p >Número  :  {{numero }} </p>
+    <p >Tipo  :  {{tipo | uppercase}} </p>
+    <p >Estatura promedio  : {{altura}} ft</p>
+    <p >Peso promedio  : {{peso}}  lb</p>
+  </div>
   <div class="imagen">
     <img [src]="pokemonImg" class="modal__image" />
   </div>

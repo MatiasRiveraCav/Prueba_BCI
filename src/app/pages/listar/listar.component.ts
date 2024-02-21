@@ -51,4 +51,8 @@ export class ListarComponent implements OnInit {
     this.selectedPokemon = pokemon;
     this.openDetail();
   }
+
+  closeModal(){
+    this.dialogRef.close();
+  }
 }

@@ -46,9 +46,15 @@ export class FormComponent implements OnInit {
     this.openSnackBar();
   }
 
+  closeModal(){
+    this.dialogRef.close();
+  }
+
   openSnackBar() {
     if (this.selectedPokemon) {
-      this._snackBar.open('Pokémon Añadido!', 'Ok');
+      this._snackBar.open('Pokémon Añadido!', 'Ok', {
+        duration: 2000
+      });
       this.agregarAtrapado(this.selectedPokemon);
     }
   }

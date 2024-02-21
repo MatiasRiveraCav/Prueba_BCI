@@ -12,6 +12,10 @@ export class DetailComponent implements OnInit {
 
   selectedPokemon: Data =  {} as Data;
   pokemonImg: string = '';
+  peso: number = 1 ;
+  numero: number = 1;
+  altura: number = 1;
+  tipo: string = ''
 
   constructor(
     public dialogRef: MatDialogRef<DetailComponent>,
@@ -29,6 +33,11 @@ export class DetailComponent implements OnInit {
     this.pokedexService.getDetail(this.data.name).subscribe((res) => {
       this.selectedPokemon = res;
       this.pokemonImg = this.selectedPokemon.sprites.front_default;
+      this.tipo = this.selectedPokemon.types[0].type.name;
+      const { order , height, weight } =  this.selectedPokemon;
+      this.numero =  order;
+      this.peso = weight;
+      this.altura = height
     });
   }
 

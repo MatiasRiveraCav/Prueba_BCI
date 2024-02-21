@@ -59,3 +59,27 @@ h1 {
 .imagen {
   display: contents;
 }
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nombre {
+  width: -webkit-fill-available;
+}
+
+.datos {
+
+  letter-spacing: 3px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 300;
+  font-size: x-large;
+  font-style: normal;
+  padding-top: 17%;
+  padding-left: 10%;
+  color: darkblue;
+}
+
+

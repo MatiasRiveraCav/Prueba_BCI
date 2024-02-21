@@ -42,7 +42,9 @@ export class EditarComponent implements OnInit {
   }
 
   openSnackBar() {
-    this._snackBar.open('Apodo Agregado!', 'Ok');
+    this._snackBar.open('Apodo Agregado!', 'Ok', {
+      duration: 2000
+    });
   }
 
   editarApodo() {
@@ -54,6 +56,10 @@ export class EditarComponent implements OnInit {
       this.selectedPokemon = {} as Pokemon;
       this.nuevoApodo = '';
     }
+
   }
 
+  closeModal(){
+    this.dialogRef.close();
+  }
 }

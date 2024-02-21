@@ -7,6 +7,27 @@ table, td{
 
 }
 
+.material-icons {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(104, 241, 115);
+  align-self: flex-end;
+  margin: 7px;
+  position: absolute;
+  top: 18%;
+
+}
+
+.material-icons:hover {
+  cursor: pointer;
+  color: darkblue;
+}
+
+.cerrar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 td:hover {
   cursor: pointer !important;
   background-color: bisque !important;
