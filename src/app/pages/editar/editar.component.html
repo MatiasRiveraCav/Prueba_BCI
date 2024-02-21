@@ -1,0 +1,19 @@
+<body class="">
+
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Selecciona un Pokémon para editar y agregar un apodo <p> presiona enter para confirmar </p></th>
+      <td mat-cell *matCellDef="let pokemon" (click)="selectPokemon(pokemon)"> {{ pokemon.name | titlecase }} <ng-container *ngIf="selectedPokemon === pokemon">
+        <input matInput [(ngModel)]="nuevoApodo" (keydown.enter)="editarApodo()"
+          placeholder="Ingresa un apodo">
+      </ng-container>{{pokemon.apodo}}</td>
+    </ng-container>
+
+    <!-- Define el encabezado de la tabla -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+    <!-- Define el cuerpo de la tabla -->
+    <tr mat-row *matRowDef="let pokemon; columns: displayedColumns;"></tr>
+  </table>
+
+</body>

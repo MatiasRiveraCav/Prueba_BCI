@@ -7,16 +7,16 @@ table, td{
 
 }
 
+td:hover {
+  cursor: pointer !important;
+  background-color: rgb(211, 52, 41) !important;
+  color: darkblue;
+}
+
 th {
   text-align: center !important;
-  color: rgb(132, 68, 250);
+  color: rgb(131, 13, 13);
   font-size: larger;
   font-weight: bolder;
 
-}
-
-td:hover {
-  cursor: pointer !important;
-  background-color: rgb(201, 247, 77) !important;
-  color: darkblue;
 }

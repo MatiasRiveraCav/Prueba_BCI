@@ -2,8 +2,8 @@
 
   <table mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Nombre </th>
-      <td mat-cell *matCellDef="let pokemon" (click)="selectPokemon(pokemon)"> {{ pokemon.name | titlecase }}  {{pokemon.apodo}} </td>
+      <th mat-header-cell *matHeaderCellDef> Selecciona un Pokémon para añadir a tu listado </th>
+      <td mat-cell *matCellDef="let pokemon" (click)="selectPokemon(pokemon)"> {{ pokemon.name | titlecase }}  </td>
     </ng-container>
 
     <!-- Define el encabezado de la tabla -->
@@ -12,4 +12,5 @@
     <!-- Define el cuerpo de la tabla -->
     <tr mat-row *matRowDef="let pokemon; columns: displayedColumns;"></tr>
   </table>
+
 </body>

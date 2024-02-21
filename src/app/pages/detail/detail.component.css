@@ -1,0 +1,61 @@
+body {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(223, 24, 24)),
+    to(rgb(230, 199, 25))
+  );
+  background: linear-gradient(rgb(223, 24, 24), rgb(230, 199, 25));
+  border: 10px solid rgb(240, 138, 42);
+  min-height: 500px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: normal;
+  -webkit-box-pack: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.material-icons {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(104, 241, 115);
+  align-self: flex-end;
+  margin: 7px;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+  color: darkblue;
+}
+
+.modal__image {
+  width: 250px;
+  position: sticky;
+  left: 55%;
+  top: 55%;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-left: 7%;
+  font-weight: bolder;
+  color: darkred;
+  letter-spacing: 7px;
+  font-size: xx-large;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imagen {
+  display: contents;
+}

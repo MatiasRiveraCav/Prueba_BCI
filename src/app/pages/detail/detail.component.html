@@ -1,1 +1,11 @@
-<p>detail works!</p>
+<body>
+
+  <div class="header">
+    <div class="nombre"><h1> {{ selectedPokemon.name | titlecase }} </h1></div>
+    <div class="cerrar"><span class="material-icons" (click)="closeModal()">close</span></div>
+  </div>
+
+  <div class="imagen">
+    <img [src]="pokemonImg" class="modal__image" />
+  </div>
+</body>

@@ -6,17 +6,22 @@ table, td{
   background: linear-gradient(rgba(243, 207, 4, 0.3), rgba(116, 243, 12, 0));
 
 }
-
-th {
-  text-align: center !important;
-  color: rgb(132, 68, 250);
-  font-size: larger;
-  font-weight: bolder;
-
+p{
+  font-size: 15px;
+  color: darkgray;
 }
 
 td:hover {
   cursor: pointer !important;
-  background-color: rgb(201, 247, 77) !important;
+  background-color: bisque !important;
   color: darkblue;
+
+}
+
+th {
+  text-align: center !important;
+  color: rgb(165, 248, 157);
+  font-size: larger;
+  font-weight: bolder;
+
 }
